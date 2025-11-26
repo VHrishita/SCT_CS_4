@@ -4,7 +4,6 @@ const status = document.getElementById("status");
 const clearBtn = document.getElementById("clearBtn");
 const downloadBtn = document.getElementById("downloadBtn");
 
-// Load logs from localStorage
 let logs = JSON.parse(localStorage.getItem("logs")) || [];
 showLogs();
 
