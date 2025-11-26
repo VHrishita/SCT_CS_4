@@ -7,7 +7,6 @@ const downloadBtn = document.getElementById("downloadBtn");
 let logs = JSON.parse(localStorage.getItem("logs")) || [];
 showLogs();
 
-// Enter key → save logs
 inputBox.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         let text = inputBox.value.trim();
@@ -23,7 +22,6 @@ inputBox.addEventListener("keydown", function(event) {
     }
 });
 
-// Display logs
 function showLogs() {
     logDisplay.innerHTML = logs.length
         ? logs.join("<br>")
