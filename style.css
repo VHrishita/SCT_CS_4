@@ -1,0 +1,150 @@
+/* ===== Animated Cyber Grid Background ===== */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(circle, rgba(255,255,255,0.45) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,255,255,0.45) 1px, transparent 1px),
+        #07141c;
+    background-size: 90px 90px, 90px 90px;
+    background-position: 0 0, 45px 45px;
+    animation: bgMove 40s linear infinite;
+    z-index: -2;
+}
+
+/* Dark overlay to blend grid */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0,0,0,0.1), rgba(0,0,0,0.55));
+    z-index: -1;
+}
+
+@keyframes bgMove {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-500px, -500px); }
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top, #0d1b26, #091921 60%, #050c11);
+    color: #e9faff;
+}
+
+/* ===== Container Card ===== */
+.container {
+    width: 60%;
+    margin: 80px auto;
+    background: rgba(0, 255, 255, 0.05);
+    padding: 32px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid rgba(0, 255, 255, 0.08);
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+}
+
+/* ===== Input Field ===== */
+#inputBox {
+    width: 92%;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    margin-bottom: 14px;
+    outline: none;
+    background: rgba(0, 20, 30, 0.6);
+    color: #c9f9ff;
+}
+
+/* ===== Log Box ===== */
+.log-box {
+    background: rgba(0, 20, 30, 0.35);
+    height: 250px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    box-shadow: inset 0 0 12px rgba(0, 255, 255, 0.06);
+}
+
+/* ===== Buttons Section ===== */
+.btn-row {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+button {
+    padding: 10px 22px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: 0.25s;
+}
+
+/* Download Button */
+#downloadBtn {
+    background: rgba(0, 255, 180, 0.12);
+    color: #bfffe9;
+    border: 1px solid rgba(0, 255, 180, 0.28);
+}
+#downloadBtn:hover {
+    background: rgba(0, 255, 180, 0.25);
+}
+
+/* Clear Button */
+.danger {
+    background: rgba(255, 60, 60, 0.12);
+    color: #ffcaca;
+    border: 1px solid rgba(255, 60, 60, 0.25);
+}
+.danger:hover {
+    background: rgba(255, 60, 60, 0.25);
+}
+
+/* ===== Footer ===== */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #98b9c9;
+    background: rgba(0, 18, 28, 0.55);
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+}
+.title {
+    font-size: 42px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #a5e3e9, #641fa5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 10;
+    margin-bottom: 18px;
+}
