@@ -28,7 +28,6 @@ function showLogs() {
         : "No logs yet...";
 }
 
-// 🔹 CLEAR LOGS
 clearBtn.addEventListener("click", () => {
     if (confirm("Clear all logs?")) {
         logs = [];
@@ -37,7 +36,6 @@ clearBtn.addEventListener("click", () => {
     }
 });
 
-// 🔹 DOWNLOAD LOGS AS TXT
 downloadBtn.addEventListener("click", () => {
     if (!logs.length) {
         alert("No logs to download");
