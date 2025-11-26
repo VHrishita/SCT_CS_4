@@ -25,12 +25,14 @@ This project is intended to help developers understand keyboard event handling, 
 
 ## Live Demo
 
+https://sct-cs-4.vercel.app/
 
 ---
 
 ## Author
 
 **Vempali Hrishita**
+
 All rights reserved 2025
 
 If you find this project helpful. Please drop a ⭐ :)
