@@ -1,4 +1,3 @@
-/* ===== Animated Cyber Grid Background ===== */
 body::before {
     content: "";
     position: fixed;
@@ -16,7 +15,6 @@ body::before {
     z-index: -2;
 }
 
-/* Dark overlay to blend grid */
 body::after {
     content: "";
     position: fixed;
@@ -40,7 +38,6 @@ body {
     color: #e9faff;
 }
 
-/* ===== Container Card ===== */
 .container {
     width: 60%;
     margin: 80px auto;
@@ -53,7 +50,6 @@ body {
     backdrop-filter: blur(8px);
 }
 
-/* ===== Input Field ===== */
 #inputBox {
     width: 92%;
     padding: 14px;
@@ -66,7 +62,6 @@ body {
     color: #c9f9ff;
 }
 
-/* ===== Log Box ===== */
 .log-box {
     background: rgba(0, 20, 30, 0.35);
     height: 250px;
@@ -79,7 +74,6 @@ body {
     box-shadow: inset 0 0 12px rgba(0, 255, 255, 0.06);
 }
 
-/* ===== Buttons Section ===== */
 .btn-row {
     margin-top: 16px;
     display: flex;
@@ -97,7 +91,6 @@ button {
     transition: 0.25s;
 }
 
-/* Download Button */
 #downloadBtn {
     background: rgba(0, 255, 180, 0.12);
     color: #bfffe9;
